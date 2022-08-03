@@ -1,26 +1,29 @@
-  * {
+* {
     margin: 0;
     padding: 0;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-  }
+}
 
-  /* Color Pallete */
-  :root {
-    --blue: #05283f; 
-    --dark-orange: #ff6f3c;  
-    --light-blue: #2f8fdd; 
-    --yellow: ##fdb44b; 
-  }
+/* Color Pallete */
+:root {
+  --blue: #05283f; 
+ --dark-orange: #ff6f3c;  
+ --light-blue: #2f8fdd; 
+ --yellow: ##fdb44b; 
+}
 
-  .container{
-    display: grid;
-    grid-template-columns: 1fr 4fr 1.5fr;
-    grid-template-rows: 1fr 4fr;
-  }
+/* Main Container for Body */
+.container{
+  display: grid;
+  grid-template-columns: 2fr 11fr;
+  /* grid-template-columns: 1fr 4fr 1.5fr; */
+  grid-template-rows: 1fr 2fr 2fr;
+}
 
+/* Left Navigation Bar */
   nav{
     grid-column: 1;
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
     display: grid;
     grid-auto-flow: row;
     grid-template-rows: 1fr 3fr 6fr;
@@ -34,6 +37,11 @@
     text-decoration: none;
     font-weight: bold;
   }
+a:active{
+  color:whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
 
   .logo {
     color: whitesmoke;
@@ -81,13 +89,28 @@
     display: grid;
     padding: 20px;
   }
+
+  /* Header Elements */
+
 .headUp{
   grid-row: 1/2;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 1fr;
   gap: 20px;
+  align-items: center;
+}
+#search{
+  align-items: center;
+  grid-template-columns: 17px 1fr 60px;
+  gap: 5px;
+}
+.searchBtn{
+  text-align: center;
+}
 
+.user{
+  font-weight: bold;
 }
 
 .headDown{
@@ -96,6 +119,7 @@
   grid-auto-flow: column;
   grid-template-columns: 1fr;
   gap: 20px;
+  align-items: center;
 }
 header div {
   display: grid;
@@ -109,30 +133,83 @@ header div {
   grid-auto-flow: row;
   grid-template-rows: 1.5rem 1.5rem;
   font-weight: bold;
+  align-items: center;
+  margin-left: 15px;
 }
 
-#userGreeting p {
-  /* font size: 10px; */
-  
+#greeting {
+  font-size: 0.8rem;
+  margin: 0px;
 }
+
 .profilePic{
   border-radius: 50%;
   border: solid 2px var(--dark-orange)
 }
 
 #smallPic{
-  width: 30px;
+  width: 40px;
 }
 
 #bigPic{
-  width: 45px;
+  width: 50px;
+}
+
+/* Main Content: Cards */
+
+.secondContainer{
+  grid-row:2/4 ;
+  display: grid;
+  grid-template-columns: 8fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-flow: columns;
+  background-color: rgb(229, 235, 243);
+  box-shadow: inset 0px 3px 6px rgb(116, 116, 116);
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  gap: 20px;
 }
 
 .content{
-  grid-row: 2/3;
-  grid-column: 2/3;;
-
+  grid-row: 1/3 ;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-rows: 2rem 1fr;
 } 
+
+.cardsContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-flow: rows;
+  gap: 20px;
+    
+}
+
+.card{
+  background-color: white;
+  border-radius: 8px;
+  border-left: solid 8px var(--dark-orange);
+  box-shadow: 2px 2px 5px rgb(214, 213, 213);
+
+}
+.card img{
+  height: 24px;
+  width: auto;
+}
+.title{
+  font-weight: bold;
+  font-size: 1.1rem; 
+}
+
+.card .title {
+  font-size: 0.9rem;
+}
+
+.cardText{
+ color: rgb(75, 74, 74);
+}
 
 .button {
   align-items: center;
@@ -179,4 +256,58 @@ header div {
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
+}
+
+/* Announcements */
+.announcements{
+  grid-row: 1/2;
+  display: grid;
+  grid-auto-flow: rows;
+  grid-template-rows: 2rem 1fr;
+}
+
+.announcementsContainer,
+.trendsContainer{
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgb(214, 213, 213);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Trending */
+.trending{
+  grid-row: 2/3;
+  display: grid;
+  grid-auto-flow: rows;
+  grid-template-rows: 2.2rem 1fr;
+
+}
+.trend{
+  display:grid;
+  grid-template: 1fr / 50px 1fr;
+}
+.trendingPics{
+  border-radius: 50%;
+  height: 45px;
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+.userName{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.trendText{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  font-weight: 350;
+  color:rgb(74, 74, 74);
+}
+
+.announcementText{
+  font-weight: 350;
+  color:rgb(74, 74, 74);
 }

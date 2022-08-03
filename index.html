@@ -17,25 +17,27 @@
                 <h2> Dashboard </h2>
             </div>
              <div class="navLinks linkList">                 
-               <div> <img class = 'icon' src = '/Icons/home-7-16.ico'> <a href="url"> Home</a> </div>             
-               <div> <img class = 'icon' src = '/Icons/profile.ico'> <a href="url"> Profile</a></div> 
-               <div> <img class = 'icon' src = '/Icons/message-2-16.ico'> <a href="url"> Messages</a></div> 
-               <div> <img class = 'icon' src = '/Icons/clock-9-16.ico'> <a href="url"> History</a></div> 
-               <div> <img class = 'icon' src = '/Icons/view-details-16.ico'> <a href="url"> Tasks</a></div> 
-               <div> <img class = 'icon' src = '/Icons/conference-16.ico'> <a href="url"> Communities</a></div> 
+               <div> <img class = 'icon' src = '/Icons/home-7-16.ico'> <a href="https://www.youtube.com/watch?v=w3bWR_aLlas"> Home</a> </div>             
+               <div> <img class = 'icon' src = '/Icons/profile.ico'> <a href="https://www.youtube.com/watch?v=w3bWR_aLlas"> Profile</a></div> 
+               <div> <img class = 'icon' src = '/Icons/message-2-16.ico'> <a href="https://www.youtube.com/watch?v=w3bWR_aLlas"> Messages</a></div> 
+               <div> <img class = 'icon' src = '/Icons/clock-9-16.ico'> <a href="https://www.youtube.com/watch?v=w3bWR_aLlas"> History</a></div> 
+               <div> <img class = 'icon' src = '/Icons/view-details-16.ico'> <a href="https://www.youtube.com/watch?v=w3bWR_aLlas"> Tasks</a></div> 
+               <div> <img class = 'icon' src = '/Icons/conference-16.ico'> <a href="https://www.youtube.com/watch?v=w3bWR_aLlas"> Communities</a></div> 
              </div>
             <div class="supLinks linkList">
-                <div> <img class = 'icon' src = '/Icons/gear.ico'> <a href="url"> Settings</a> </div> 
-                <div> <img class = 'icon' src = '/Icons/online-support-16.ico'> <a href="url"> Support</a> </div> 
-                <div> <img class = 'icon' src = '/Icons/lock-16.ico'><a href="url"> Privacy</a> </div> 
+                <div> <img class = 'icon' src = '/Icons/gear.ico'> <a href="https://www.youtube.com/watch?v=w3bWR_aLlas"> Settings</a> </div> 
+                <div> <img class = 'icon' src = '/Icons/online-support-16.ico'> <a href="https://www.youtube.com/watch?v=w3bWR_aLlas"> Support</a> </div> 
+                <div> <img class = 'icon' src = '/Icons/lock-16.ico'><a href="https://www.youtube.com/watch?v=w3bWR_aLlas"> Privacy</a> </div> 
              </div>
         </nav>
 
         <header>
             <div class="headUp">
                 <form class="searchBar" action="action_page.php">
-                    <input type="text" placeholder="Search..." name="search">
-                    <button type="submit"><i class="searchBtn"></i></button>
+                    <div id = 'search'> <img src="/Icons/search.png"> 
+                        <input type="text" placeholder="Search..." name="search">
+                        <button type="submit">Search<i class="searchBtn"></i></button>
+                    </div>
                 </form>
                 <img src="/Icons/bell.png" alt="notificaciones">
                 <img id = 'smallPic' class = 'profilePic' src="/Icons/berserkerarmor.jpg" alt="Profile Pic">
@@ -56,73 +58,113 @@
 
         </header>
 
-        <div class="content">
-            <div class="cards">
-                <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                  </div>
-                  <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                  </div>
-                  <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                  </div>
-                  <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                  </div>
-                  <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                  </div>
-                  <div class="card">
-                    <p class="title">Article Title</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                  </div>
+        <div class="secondContainer">
+
+            <div class="content">
+                <p class="title">Things</p>
+                <div class="cardsContainer">
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="cardIcons">
+                             <img src="/Icons/star.png" alt = 'star'>
+                             <img src="/Icons/add.png" alt = 'add'>
+                             <img src="/Icons/share.png" alt = 'share'>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="cardIcons">
+                            <img src="/Icons/star.png" alt = 'star'>
+                            <img src="/Icons/add.png" alt = 'add'>
+                            <img src="/Icons/share.png" alt = 'share'>
+                       </div>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="cardIcons">
+                            <img src="/Icons/star.png" alt = 'star'>
+                            <img src="/Icons/add.png" alt = 'add'>
+                            <img src="/Icons/share.png" alt = 'share'>
+                       </div>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="cardIcons">
+                            <img src="/Icons/star.png" alt = 'star'>
+                            <img src="/Icons/add.png" alt = 'add'>
+                            <img src="/Icons/share.png" alt = 'share'>
+                       </div>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="cardIcons">
+                            <img src="/Icons/star.png" alt = 'star'>
+                            <img src="/Icons/add.png" alt = 'add'>
+                            <img src="/Icons/share.png" alt = 'share'>
+                       </div>
+                    </div>
+                    <div class="card">
+                        <p class="title">Article Title</p>
+                        <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+                        <div class="cardIcons">
+                            <img src="/Icons/star.png" alt = 'star'>
+                            <img src="/Icons/add.png" alt = 'add'>
+                            <img src="/Icons/share.png" alt = 'share'>
+                       </div>
+                    </div>
+                </div>
+            </div>   
+
+                <div class="announcements">
+                    <p class="title">Announcements</p>
+                    <div class="announcementsContainer">
+                        <div class="announcement">
+                            <p>Announcement 1</p>
+                            <p class="announcementText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                        </div>
+    
+                        <div class="announcement">
+                            <p>Announcement 2</p>
+                            <p class="announcementText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                        </div>
+    
+                        <div class="announcement">
+                            <p>Announcement 3</p>
+                            <p class="announcementText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                        </div>
+                    </div>
+    
             </div>
 
-            <div class="announcements">
-                <p class="title">Announcements</div>/p>
-                <div class="announcement">
-                    <p>Announcement 1</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
+            <div class="trending">
+                <p class="title">Trending</p>
+                <div class = 'trendsContainer'>
+                    <div class="trend">
+                        <img src="/Icons/Jorgito.jpeg" alt="logo 1" class = 'trendingPics'>
+                            <p class ='userName'>@jorem321</p>
+                            <p class = 'trendText'>Road to $1B </p>
+                    </div>
+                    <div class="trend">
+                        <img src="/Icons/Isaacsito.jpeg" alt="logo 2" class = 'trendingPics'>
+                        <p class ='userName'>@ivolkg</p>
+                        <p class = 'trendText'>Rustaceans in control</p>
+                    </div>
+                    <div class="trend">
+                        <img src="/Icons/Edguitar.jpeg" alt="logo 3" class = 'trendingPics'>
+                        <p class="userName">@EdgarBarrantes</p>
+                        <p class = 'trendText'>Freseate: Renew Yourself</p>
+                    </div>
                 </div>
 
-                <div class="announcement">
-                    <p>Announcement 2</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-
-                <div class="announcement">
-                    <p>Announcement 3</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-                </div>
-                
- 
-        </div>
-
-        <div class="trending">
-            <div class="trend">
-                <img src="logo 1" alt="logo 1">
-                    <p>Trend 1</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
             </div>
-            <div class="trend">
-                <img src="logo 2" alt="logo 2">
-                <p>Trend 2</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-            </div>
-            <div class="trend">
-                <img src="logo 3" alt="logo 3">
-                <p>Trend 3</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud...</p>
-            </div>
-
         </div>
     </div>
     </div>
 </body>
 </html>
+
