@@ -105,6 +105,18 @@ a:active{
   grid-template-columns: 17px 1fr 60px;
   gap: 5px;
 }
+input[type = text]{
+  background-color:  rgb(229, 235, 243);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 10px;
+}
+
+input[type=text]:focus{
+  border: 1px solid var(--dark-orange);
+}
+
 .searchBtn{
   text-align: center;
 }
@@ -211,7 +223,8 @@ header div {
  color: rgb(75, 74, 74);
 }
 
-.button {
+.button, 
+button[type=submit]{
   align-items: center;
   background-color: var(--light-blue);
   border: 0;
@@ -227,7 +240,7 @@ header div {
   line-height: 20px;
   max-width: 480px;
   max-height: 1.75rem;
-  /* min-height: 40px; */
+  min-height: 25px;
   min-width: 0px;
   overflow: hidden;
   padding: 0px;
@@ -242,17 +255,21 @@ header div {
 }
 
 .button:hover,
-.button:focus { 
+.button:focus ,
+ button[type=submit]:hover, 
+ button[type=submit]:focus { 
   background-color: #16437E;
   color: #ffffff;
 }
 
-.button:active {
+.button:active, 
+button[type=submit]:active{
   background: #09223b;
   color: rgb(255, 255, 255, .7);
 }
 
-.button:disabled { 
+.button:disabled,
+button[type=submit]:disabled { 
   cursor: not-allowed;
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
