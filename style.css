@@ -196,8 +196,7 @@ header div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-flow: rows;
-  gap: 20px;
-    
+  gap: 20px;  
 }
 
 .card{
@@ -205,23 +204,45 @@ header div {
   border-radius: 8px;
   border-left: solid 8px orange;
   box-shadow: 2px 2px 5px rgb(214, 213, 213);
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
+.card .title{
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  font-size: 0.9rem;
 }
 .card img{
-  height: 24px;
+  height: 20px;
   width: auto;
 }
+
+.cardIcons{
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 3fr 2fr;
+}
+
+#magicSpace2{
+  display: flex;
+  justify-content: space-around;
+}
+
 .title{
   font-weight: bold;
   font-size: 1.1rem; 
 }
 
-.card .title {
-  font-size: 0.9rem;
-}
 
 .cardText{
  color: rgb(75, 74, 74);
+ font-size: 0.8rem;
+ padding-right: 10%;
+ text-align: justify;
 }
 
 .button, 
@@ -259,13 +280,13 @@ button[type=submit]{
 .button:focus ,
  button[type=submit]:hover, 
  button[type=submit]:focus { 
-  background-color: #16437E;
+  background-color: #253e5f;
   color: #ffffff;
 }
 
 .button:active, 
 button[type=submit]:active{
-  background: #09223b;
+  background: #163453;
   color: rgb(255, 255, 255, .7);
 }
 
@@ -282,6 +303,10 @@ button[type=submit]:disabled {
   display: grid;
   grid-auto-flow: rows;
   grid-template-rows: 2rem 1fr;
+}
+
+.announcements :first-child{
+  font-weight: 500;
 }
 
 .announcementsContainer,
